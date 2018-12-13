@@ -1,0 +1,13 @@
+{
+  "name": "@eetee/root",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  },
+  "scripts": {
+    "i": "yarn i && lerna bootstrap"
+  }
+}
