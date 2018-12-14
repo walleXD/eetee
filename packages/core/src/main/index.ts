@@ -15,6 +15,7 @@ function createMainWindow() {
   })
   const window = new BrowserWindow({
     height: mainWindowState.height,
+    titleBarStyle: "customButtonsOnHover",
     width: mainWindowState.width,
     x: mainWindowState.x,
     y: mainWindowState.y
