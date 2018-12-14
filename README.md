@@ -1,4 +1,4 @@
-# EETEE
+# Eetee 👾
 
 ## Simple Reddit client for desktops
 
