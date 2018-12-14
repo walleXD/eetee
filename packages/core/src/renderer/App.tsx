@@ -1,6 +1,7 @@
 import React from "react"
 import { MemoryRouter as Router } from "react-router"
 
+import withRoot from "./lib/withRoot"
 import Pages from "./pages"
 
 const App: React.SFC = () => (
@@ -9,4 +10,4 @@ const App: React.SFC = () => (
   </Router>
 )
 
-export default App
+export default withRoot(App)
