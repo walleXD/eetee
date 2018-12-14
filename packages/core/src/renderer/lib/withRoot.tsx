@@ -8,6 +8,7 @@ import { install } from "@material-ui/styles"
 import * as React from "react"
 import "typeface-roboto/index.css" // tslint:disable-line:no-submodule-imports
 
+// bootstrap the newer styling implementation is material-ui
 install()
 // A theme with custom primary and secondary color.
 // It's optional.
