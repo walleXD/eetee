@@ -5,9 +5,16 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "prettier": "^1.15.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.2"
   },
   "scripts": {
-    "i": "yarn i && lerna bootstrap"
+    "i": "yarn i && lerna bootstrap",
+    "format": "prettier --write \"packages/**/*.ts\" \"packages/**/*.js\"",
+    "lint": "tslint -c tslint.json -e **/node_modules/** \"packages/**/*.ts\" \"packages/**/*.tsx\""
   }
 }

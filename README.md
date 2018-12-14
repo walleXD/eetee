@@ -4,4 +4,4 @@
 
 ### ToDos
 
-- [ ] Add Tslint
+- [x] Add Tslint
