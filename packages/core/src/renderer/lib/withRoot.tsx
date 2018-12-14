@@ -6,7 +6,7 @@ import {
 } from "@material-ui/core"
 import { install } from "@material-ui/styles"
 import * as React from "react"
-import "typeface-roboto"
+import "typeface-roboto/index.css" // tslint:disable-line:no-submodule-imports
 
 install()
 // A theme with custom primary and secondary color.

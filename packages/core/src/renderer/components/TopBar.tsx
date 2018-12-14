@@ -4,11 +4,13 @@ import React from "react"
 
 const useStyles = makeStyles({
   root: {
+    WebkitAppRegion: "drag",
+    WebkitUserSelect: "none",
     flexGrow: 1
   }
 })
 
-const TopBar = () => {
+const TopBar: React.SFC = () => {
   const classes = useStyles({})
   return (
     <AppBar position="static" color="primary" className={classes.root}>
