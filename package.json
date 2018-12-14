@@ -13,7 +13,7 @@
     "typescript": "^3.2.2"
   },
   "scripts": {
-    "i": "yarn i && lerna bootstrap",
+    "i": "yarn && lerna bootstrap",
     "format": "prettier --write \"packages/**/*.ts\" \"packages/**/*.js\"",
     "lint": "tslint -c tslint.json -e **/node_modules/** \"packages/**/*.ts\" \"packages/**/*.tsx\""
   }
