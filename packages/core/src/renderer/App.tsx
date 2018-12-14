@@ -5,9 +5,11 @@ import withRoot from "./lib/withRoot"
 import Pages from "./pages"
 
 const App: React.SFC = () => (
-  <Router>
-    <Pages />
-  </Router>
+  <>
+    <Router>
+      <Pages />
+    </Router>
+  </>
 )
 
 export default withRoot(App)

@@ -4,9 +4,11 @@ import {
   CssBaseline,
   MuiThemeProvider
 } from "@material-ui/core"
+import { install } from "@material-ui/styles"
 import * as React from "react"
 import "typeface-roboto"
 
+install()
 // A theme with custom primary and secondary color.
 // It's optional.
 const { amber, purple } = colors
