@@ -3,7 +3,7 @@
   "rules": {
     "no-implicit-dependencies": [
       true,
-      ["electron", "electron-devtools-installer"]
+      ["electron", "electron-devtools-installer", "devtron"]
     ]
   }
 }

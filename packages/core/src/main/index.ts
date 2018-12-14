@@ -1,8 +1,4 @@
 import { app, BrowserWindow } from "electron"
-import installExtension, {
-  REACT_DEVELOPER_TOOLS,
-  REDUX_DEVTOOLS
-} from "electron-devtools-installer"
 import windowState from "electron-window-state"
 import * as path from "path"
 import { format as formatUrl } from "url"
@@ -27,6 +23,13 @@ function createMainWindow() {
 
   if (isDevelopment) {
     window.webContents.openDevTools()
+
+    require("devtron").install()
+    const {
+      default: installExtension,
+      REACT_DEVELOPER_TOOLS,
+      REDUX_DEVTOOLS
+    } = require("electron-devtools-installer")
     installExtension([REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS])
       .then((name: string) => console.log(`Added Extension:  ${name}`)) // tslint:disable-line:no-console
       .catch((err: string) => console.log("An error occurred: ", err)) // tslint:disable-line:no-console

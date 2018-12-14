@@ -1,5 +1,12 @@
 import React from "react"
+import { MemoryRouter as Router } from "react-router"
 
-const App = () => <h1>Hello from Eetee</h1>
+import Pages from "./pages"
+
+const App: React.SFC = () => (
+  <Router>
+    <Pages />
+  </Router>
+)
 
 export default App
