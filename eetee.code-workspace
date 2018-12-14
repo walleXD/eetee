@@ -9,6 +9,6 @@
   ],
   "settings": {
     "editor.formatOnSave": true,
-    "prettier.eslintIntegration": true
+    "prettier.tslintIntegration": true
   }
 }

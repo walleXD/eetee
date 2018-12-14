@@ -1,6 +1,9 @@
 {
   "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
   "rules": {
-    "no-implicit-dependencies": [true, ["electron"]]
+    "no-implicit-dependencies": [
+      true,
+      ["electron", "electron-devtools-installer"]
+    ]
   }
 }
