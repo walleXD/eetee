@@ -6,7 +6,7 @@ import { format as formatUrl } from "url"
 const isDevelopment = process.env.NODE_ENV !== "production"
 
 // global reference to mainWindow (necessary to prevent window from being garbage collected)
-let mainWindow: any
+let mainWindow: Electron.BrowserWindow | null
 
 function createMainWindow() {
   const mainWindowState = windowState({
@@ -15,7 +15,7 @@ function createMainWindow() {
   })
   const window = new BrowserWindow({
     height: mainWindowState.height,
-    titleBarStyle: "hiddenInset",
+    // titleBarStyle: "hiddenInset",
     width: mainWindowState.width,
     x: mainWindowState.x,
     y: mainWindowState.y

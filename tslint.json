@@ -4,6 +4,8 @@
     "no-implicit-dependencies": [
       true,
       ["electron", "electron-devtools-installer", "devtron"]
-    ]
+    ],
+
+    "interface-name": [true, "never-prefix"]
   }
 }
